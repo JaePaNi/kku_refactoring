@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style/index.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./img/kku_logo.png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap"
+          rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+            integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+            crossorigin="anonymous"></script>
+
+    <title>교육학과 심리측정통계연구실</title>
+</head>
+<body>
+<header id="header">
+    <div class="header__logo">
+        <a href="index.html">
+            <img src="img/kku_logo.png">
+        </a>
+    </div>
+    <div class="header__title">
+        <div class="title__ko">건국대학교 대학원 교육학과 심리측정통계 연구실</div>
+        <div class="title__en">Konkuk University / Psychological Measurement & Statistics Lab.</div>
+    </div>
+</header>
+
+<nav id="nav">
+    <ul>
+        <li><a>Home</a></li>
+        <li><a>전공 소개</a></li>
+        <li><a>책임교수 소개</a></li>
+        <li><a>연구실 및 연구원 소개</a></li>
+    </ul>
+</nav>
+
+<section id="main__section">
+    <div class="images__wrap">
+        <img src="img/main_1.png" class="main__image">
+        <img src="img/main_2.png" class="main__image">
+    </div>
+</section>
+
+<section id="navigation__wrap">
+    <div class="nav active"></div>
+    <div class="nav"></div>
+</section>
+
+<section id="sub__section">
+    <div class="lab__desc">
+        <span>건국대학교 대학원 교육학과 심리측정통계 연구실</span>은
+        <br>
+        인간의 인지적, 심리적, 사회적 특성과 관련된 데이터 분석을 통해
+        <br>
+        인사이트를 도출하기 위한 다양한 연구를 수행하고 있습니다.
+    </div>
+    <div class="lab__title__links">
+        <div class="lab__title">관련 사이트 <span>바로가기</span></div>
+        <div class="lab__hr"></div>
+        <div class="lab__link"><a href="http://education.konkuk.ac.kr/main.do" target="_blank">건국대학교 일반대학원 교육학과 홈페이지</a></div>
+        <div class="lab__link"><a href="http://www.konkuk.ac.kr/Administration/Education/jsp/department/depart_03_23.jsp" target="_blank">건국대학교 교육대학원 교육학과 교육데이터컨설팅전공 홈페이지</a></div>
+    </div>
+</section>
+
+<section id="footer__hr"></section>
+
+<footer id="footer">
+    <div class="footer__logo"><img src="img/kku_logo.png"></div>
+    <div class="footer__info">
+        <div class="footer__address">(우)05029 서울특별시 광진구 능동로 120(화양동 1번지) 교육과학관 121호 건국대학교 교육학과 Tel.02-450-3842</div>
+        <div class="footer__copyright">COPYRIGHT 2021 KONKUK UNIVERSITY. ALL RIGHTS RESERVED.</div>
+    </div>
+</footer>
+
+</body>
+</html>
+
+<script>
+    let move = 100;
+    const selectImages = document.querySelectorAll('.main__image');
+    const selectNav = document.querySelectorAll('.nav');
+    const animation = () => {
+        if (move === 100) {
+            selectImages.forEach((data) => {
+                data.style.transition = '500ms';
+                data.style.right = `${move}%`
+                selectNav[0].classList.remove('active');
+                selectNav[1].classList.add('active');
+            });
+            move = 0;
+        } else {
+            selectImages.forEach((data) => {
+                data.style.transition = '500ms';
+                data.style.right = `${move}%`
+                selectNav[0].classList.add('active');
+                selectNav[1].classList.remove('active');
+            });
+            move = 100;
+        }
+    }
+    setInterval(() => {
+        animation();
+    }, 5000);
+</script>
