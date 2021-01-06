@@ -178,4 +178,8 @@ a {
         font-size: var(--font-micro);
     }
 
+    .up {
+        bottom: -85vh;
+    }
+
 }
