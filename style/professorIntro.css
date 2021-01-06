@@ -1,0 +1,365 @@
+@font-face {
+    font-family: 'MalgunGothic';
+    src: url('/font/MalgunGothic.eot');
+}
+
+:root {
+    --font-xxr: 22px;
+    --font-large: 18px;
+    --font-big: 16px;
+    --font-medium: 14px;
+    --font-small: 12px;
+    --font-micro: 8px;
+
+    --color-light-gray: #c9c9c9;
+    --color-gray: #757575;
+    --color-dark-gray: #6e6e6e;
+    --color-cream: #EAEAEA;
+    --color-sky-blue: #3991d5;
+
+    --width-60: 60%;
+    --width-75: 75%;
+}
+
+ul {
+    cursor: pointer;
+}
+
+#nav {
+    position: sticky;
+    top: 0;
+}
+
+#main {
+    width: var(--width-75);
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.up {
+    position: relative;
+    left: 85%;
+    top: 700px;
+}
+
+.up img {
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: var(--color-light-gray);
+}
+
+.main__nav {
+    padding: 0px 50px;
+    min-width: 280px;
+}
+
+.main__section {
+    width: 70%;
+}
+
+.main__nav__wrap {
+    position: sticky;
+    top: 100px;
+
+    text-align: center;
+}
+
+.main__nav__title {
+    font-size: var(--font-xxr);
+    font-weight: bold;
+    padding: 10px;
+    background-color: var(--color-light-gray);
+}
+
+.main__nav__list {
+    text-align: left;
+    line-height: 50px;
+    margin-left: 30px;
+}
+
+.main__nav__list ul {
+    margin-left: 30px;
+    list-style-type: square;
+}
+
+.mobile__menu {
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/*start*/
+.section__professor__info--one {
+    display: flex;
+    align-items: center;
+}
+
+.professor__name {
+    margin-top: 60px;
+    margin-left: 20px;
+}
+
+.professor__profiles {
+    list-style: disc;
+    margin-left: 35px;
+    line-height: 40px;
+}
+
+.professor__profiles--in {
+    list-style: circle;
+    margin-left: 30px;
+}
+
+.interest__list {
+    display: flex;
+    /*list-style: disc;*/
+    /*margin-left: 35px;*/
+}
+
+.interest__list li {
+    margin: 0 10px;
+}
+
+.professor__information {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 30px 0;
+}
+
+.lab,
+.tel,
+.email,
+.homePage {
+    text-align: center;
+    padding: 15px 0;
+    width: 50%;
+}
+
+.lab img,
+.tel img,
+.email img,
+.homePage img {
+    width: 70px;
+    height: auto;
+}
+
+.lab__title {
+    width: 50%;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 auto;
+    background-color: black;
+    color: white;
+}
+
+.lab__content {
+    margin: 10px 0;
+    font-size: var(--font-large);
+}
+
+.professor__info__list {
+    font-weight: bold;
+    color: var(--color-sky-blue);
+}
+
+.career__info__wrap--one,
+.career__info__wrap--two,
+.career__info__wrap--three {
+    display: flex;
+    align-items: center;
+}
+
+.title__wrap {
+    padding: 30px;
+    width: 120px;
+    min-width: 120px;
+}
+
+.info__desc li {
+    text-align: left;
+    font-weight: bold;
+    list-style: disc;
+    font-size: var(--font-large);
+}
+
+.info__desc--in li {
+    font-weight: lighter;
+    list-style: circle;
+    font-size: var(--font-medium);
+    margin-left: 30px;
+}
+
+.career__info h3 {
+    font-size: var(--font-xxr);
+
+}
+
+.career__info ul {
+    list-style: disc;
+    margin-left: 30px;
+    line-height: 50px;
+    font-size: var(--font-medium);
+}
+
+.books {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.books img {
+    width: 20%;
+    margin: 20px 0;
+}
+
+
+@media screen and (max-width: 768px) {
+    :root {
+        --font-xxr: 16px;
+        --font-xr : 14px;
+        --font-large: 12px;
+        --font-big: 10px;
+        --font-medium: 9px;
+        --font-small: 8px;
+        --font-micro: 5px;
+
+        --color-light-gray: #c9c9c9;
+        --color-gray: #757575;
+        --color-dark-gray: #6e6e6e;
+        --color-cream: #EAEAEA;
+        --color-sky-blue: #3991d5;
+
+        --width-98: 98%;
+        --width-95: 95%;
+        --width-90: 90%;
+    }
+
+    #main {
+        width: var(--width-95);
+        display: block;
+    }
+
+    .up {
+        top: 400px;
+    }
+
+    .main__nav {
+        width: 100%;
+        padding: 0;
+    }
+
+    .mobile__menu {
+        margin-right: 10px;
+        background-color: white;
+        text-align: right;
+        display: block;
+        position: sticky;
+        padding: 10px 0;
+        top: 40px;
+    }
+
+    .main__nav {
+        display: none;
+        position: sticky;
+        top: 90px;
+        background-color: white;
+        font-size: var(--font-large);
+    }
+
+    .main__section {
+        width: 100%;
+    }
+
+    .lab__title {
+        font-size: var(--font-medium);
+    }
+
+    .section__professor__info--one {
+        display: block;
+        text-align: center;
+    }
+
+    .professor__name {
+        margin: 0;
+        font-size: var(--font-xr);
+    }
+
+    .professor__profiles {
+        font-size: var(--font-big);
+        margin-left: 30px;
+        line-height: 30px;
+    }
+
+    .professor__profiles--in {
+        margin-left: 30px;
+    font-size: var(--font-big);
+    }
+
+    .name__ko,
+    .interest {
+        text-align: center;
+        margin-top: 50px;
+        font-size: var(--font-xr);
+    }
+
+    .interest__list {
+        display: block;
+        flex-wrap: wrap;
+    }
+
+    .interest__list li {
+        text-align: center;
+        margin-bottom: 10px;
+        font-size: var(--font-big);
+    }
+
+    .professor__info__list {
+        text-align: center;
+        font-size: var(--font-xxr);
+    }
+
+    .career__info__wrap--one,
+    .career__info__wrap--two,
+    .career__info__wrap--three {
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    .title__wrap {
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+        font-size: 13px;
+    }
+
+    .career__info ul {
+        line-height: 20px;
+        font-size: var(--font-big);
+    }
+
+    .info__desc--in li {
+        margin-left: 0px;
+        line-height: 20px;
+    }
+
+    .info__desc {
+        font-size: var(--font-large);
+    }
+    h3{
+        text-align: center;
+    }
+
+    ul {
+        font-size: var(--font-large);
+    }
+
+}

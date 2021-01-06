@@ -173,6 +173,7 @@
 @media screen and (max-width: 768px) {
     :root {
         --font-xxr : 16px;
+        --font-xr : 14px;
         --font-large: 12px;
         --font-big: 10px;
         --font-medium: 9px;
@@ -215,7 +216,8 @@
     .main__section__title--one,
     .main__section__title--two,
     .main__section__title--three {
-        font-size: var(--font-xxr);
+        font-size: var(--font-xr);
+        text-align: center;
     }
 
     .main__section__title--one {

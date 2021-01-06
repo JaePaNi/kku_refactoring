@@ -53,17 +53,17 @@
             <img src="img/bg_lnb_h2.png">
             <div class="main__nav__title">전공 소개</div>
             <ul class="main__nav__list">
-                <li>심리측정 및 통계 전공이란?</li>
-                <li>
+                <li class="list__one">심리측정 및 통계 전공이란?</li>
+                <li class="list__two">
                     일반대학원 심리측정통계 전공
                     <ul class="nav__list__first">
-                        <li>일반대학원 주요 개설 과목</li>
+                        <li class="list__two--in">일반대학원 주요 개설 과목</li>
                     </ul>
                 </li>
-                <li>
+                <li class="list__three">
                     교육대학원 교육데이터컨설팅 전공
                     <ul class="nav__list__second">
-                        <li>교육대학원 주요 개설 과목</li>
+                        <li class="list__three--in">교육대학원 주요 개설 과목</li>
                     </ul>
                 </li>
             </ul>
@@ -240,10 +240,35 @@
 </html>
 
 <script>
+    document.querySelector('.list__one').addEventListener('click', () => {
+        document.querySelector('.main__section__title--one').scrollIntoView({inline: 'center', behavior: 'smooth'});
+    });
+    document.querySelector('.list__two').addEventListener('click', () => {
+        document.querySelector('.main__section__title--two').scrollIntoView({inline: 'center', behavior: 'smooth'});
+    });
+
+    document.querySelector('.list__two--in').addEventListener('click', () => {
+        document.querySelector('.main__section__first--table').scrollIntoView({inline: 'center', behavior: 'smooth'});
+    });
+
+    document.querySelector('.list__three').addEventListener('click', () => {
+        document.querySelector('.main__section__title--three').scrollIntoView({inline: 'center', behavior: 'smooth'});
+    });
+
+    document.querySelector('.list__three--in').addEventListener('click', () => {
+        document.querySelector('.main__section__second--table').scrollIntoView({inline: 'center', behavior: 'smooth'});
+    });
+
     const selectMenu = document.querySelector('.mobile__menu');
     const selectMainNav = document.querySelector('.main__nav');
     selectMenu.addEventListener('click', () => {
         selectMainNav.style.display !== 'none' ?
             selectMainNav.style.display = 'none' : selectMainNav.style.display = 'block';
+    });
+
+    const selectUpArrow = document.querySelector('.up');
+    selectUpArrow.addEventListener('click', () => {
+        const home = document.querySelector('body');
+        home.scrollIntoView({behavior: 'smooth'});
     });
 </script>
