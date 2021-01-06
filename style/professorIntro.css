@@ -217,7 +217,7 @@ ul {
 }
 
 .books img {
-    width: 50%;
+    width: 20%;
     margin: 20px 0;
 }
 
@@ -357,6 +357,11 @@ ul {
 
     .info__desc {
         font-size: var(--font-large);
+    }
+
+    .books img {
+        width: 50%;
+        margin: 20px 0;
     }
 
     h3 {
