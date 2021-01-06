@@ -45,6 +45,13 @@ a {
     align-items: center;
 }
 
+.up {
+    position: relative;
+    left: 85%;
+    top: 50%;
+    bottom: -70vh;
+}
+
 .header__logo img {
     width: 100%;
 }

@@ -38,11 +38,11 @@ ul {
     margin-top: 20px;
 }
 
-.up {
-    position: relative;
-    left: 85%;
-    top: 700px;
-}
+/*.up {*/
+/*    position: relative;*/
+/*    left: 85%;*/
+/*    top: 700px;*/
+/*}*/
 
 .up img {
     position: fixed;
