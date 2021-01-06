@@ -225,7 +225,7 @@ ul {
 @media screen and (max-width: 768px) {
     :root {
         --font-xxr: 16px;
-        --font-xr : 14px;
+        --font-xr: 14px;
         --font-large: 12px;
         --font-big: 10px;
         --font-medium: 9px;
@@ -275,6 +275,10 @@ ul {
         font-size: var(--font-large);
     }
 
+    .main__nav__wrap img {
+        display: none;
+    }
+
     .main__section {
         width: 100%;
     }
@@ -301,7 +305,7 @@ ul {
 
     .professor__profiles--in {
         margin-left: 30px;
-    font-size: var(--font-big);
+        font-size: var(--font-big);
     }
 
     .name__ko,
@@ -354,7 +358,8 @@ ul {
     .info__desc {
         font-size: var(--font-large);
     }
-    h3{
+
+    h3 {
         text-align: center;
     }
 
