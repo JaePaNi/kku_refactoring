@@ -76,6 +76,11 @@ a {
     background-color: var(--color-dark-gray);
 }
 
+#nav {
+    position: sticky;
+    top: 0;
+}
+
 #nav ul {
     display: flex;
     justify-content: center;
@@ -156,7 +161,11 @@ a {
 
     #nav ul {
         font-size: var(--font-big);
-        height: 40px;
+        height: 60px;
+    }
+
+    #nav ul li:hover {
+        background-color: var(--color-dark-gray);
     }
 
     #footer__hr {
@@ -181,5 +190,4 @@ a {
     .up {
         bottom: -120vh;
     }
-
 }

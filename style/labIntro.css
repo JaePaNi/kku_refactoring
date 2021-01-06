@@ -171,27 +171,32 @@ ul {
         display: none;
     }
 
-    .mobile__menu {
-        margin-right: 10px;
-        background-color: white;
-        text-align: right;
-        display: block;
-        position: sticky;
-        padding: 10px 0;
-        top: 40px;
-    }
-
     .main__nav {
         width: 100%;
         padding: 0;
     }
 
+    .mobile__menu {
+        background-color: white;
+        text-align: right;
+        display: block;
+        position: sticky;
+        padding: 10px 0;
+        top: 60px;
+        background-color: #EAEAEA;
+    }
+
+    .mobile__menu img {
+        margin-right: 20px;
+    }
+
     .main__nav {
         display: none;
         position: sticky;
-        top: 90px;
+        top: 105px;
         background-color: white;
         font-size: var(--font-large);
+        background-color: #EAEAEA;
     }
 
     .main__section {
