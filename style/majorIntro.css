@@ -1,0 +1,80 @@
+@font-face {
+    font-family: 'MalgunGothic';
+    src: url('/font/MalgunGothic.eot');
+}
+
+:root {
+    --font-xxr: 22px;
+    --font-large: 18px;
+    --font-big: 16px;
+    --font-medium: 14px;
+    --font-small: 12px;
+    --font-micro: 8px;
+
+    --color-light-gray: #c9c9c9;
+    --color-gray: #757575;
+    --color-dark-gray: #6e6e6e;
+    --color-cream: #EAEAEA;
+    --color-sky-blue: #3991d5;
+
+    --width-60: 60%;
+    --width-75: 75%;
+}
+
+#nav {
+    position: sticky;
+    top: 0;
+}
+
+#main {
+    width: var(--width-75);
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.main__nav {
+    padding: 0px 50px;
+    min-width: 280px;
+}
+
+.main__section {
+    width: 70%;
+}
+
+.main__nav__wrap {
+    position: sticky;
+    top: 100px;
+
+    text-align: center;
+}
+
+.main__nav__title {
+    font-size: var(--font-xxr);
+    font-weight: bold;
+    padding: 10px;
+    background-color: var(--color-light-gray);
+}
+
+.main__nav__list {
+    text-align: left;
+    line-height: 50px;
+    margin-left: 30px;
+}
+
+.main__nav__list ul {
+    margin-left: 30px;
+    list-style-type : square;
+}
+
+.main__section__title {
+    font-weight: bold;
+    color: #3991d5;
+}
+
+.main__section__firstContent,
+.main__section__secondContent,
+.main__section__thirdContent {
+    /*padding: 0 20px;*/
+}
