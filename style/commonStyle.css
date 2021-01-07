@@ -51,6 +51,7 @@ a {
     position: relative;
     left: 85%;
     top: 50%;
+    bottom: 80%;
     bottom: -70vh;
 }
 
@@ -189,7 +190,7 @@ a {
         font-size: var(--font-micro);
     }
 
-    .up {
-        bottom: -120vh;
-    }
+    /*.up {*/
+    /*    bottom: -120vh;*/
+    /*}*/
 }
